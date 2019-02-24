@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Northampton Saints Hall of Fame</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="nationality" class="primary">Nationality</label>
+          <input type="text" id="nationality" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="category" class="primary">Position</label>
+          <select id="category">
+            <option value="" disabled selected></option>
+            <option value="Prop">Prop</option>
+            <option value="Hooker">Hooker</option>
+            <option value="Lock">Lock</option>
+            <option value="Flanker">Flanker</option>
+            <option value="Number 8">Number 8</option>
+            <option value="Scrum Half">Scrum Half</option>
+            <option value="Fly Half">Fly Half</option>
+            <option value="Winger">Winger</option>
+            <option value="Centre">Centre</option>
+            <option value="Fullback">Fullback</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>Northampton Saints Hall of Fame</h1>
+    <div id="hall-of-fame"></div>
+  </body>
+</html>
